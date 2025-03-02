@@ -76,7 +76,7 @@ const NavBar = () => {
 						</li>
 						<li className="relative group">
 							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
-								<NavLink to="/properties">Listing</NavLink>
+								<NavLink to="/shortlets">Listing</NavLink>
 							</a>
 							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>

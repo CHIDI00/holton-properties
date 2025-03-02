@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
+// Fix the import to match what's actually exported
+import { shortletData } from "./shortletData";
+// Or if it's a default export, use:
+// import shortlets from "./shortletData";
 import { HiHeart } from "react-icons/hi";
-import { shortletData } from "../shortlet/shortletData";
 import { NavLink } from "react-router-dom";
+import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
 
-const ShortListShowcase = () => {
+const ShortletContent = () => {
 	const [favorites, setFavorites] = useState({});
 
 	const toggleFavorite = (id) => {
@@ -15,28 +18,20 @@ const ShortListShowcase = () => {
 	};
 
 	return (
-		<section className="w-screen py-24 bg-gray-100">
-			<div className="container mx-auto px-4">
-				<div className="text-center mb-12">
-					<h2
-						className="text-5xl font-bold text-[#0B0B1F] mb-4"
-						data-aos="fade-up"
-					>
-						Shortlist Showcase
-					</h2>
-					<div
-						className="flex items-center justify-center gap-2 mb-4"
-						data-aos="fade-up"
-					>
-						<span className="w-40 h-2 bg-blue-800 rounded-full"></span>
-					</div>
-					<p className="text-gray-500 text-2xl" data-aos="fade-up">
-						Explore our handpicked selection of premium shortlets
-					</p>
-				</div>
+		<>
+			<div className="w-full bg-blue-950 py-20 md:py-32 flex flex-col justify-center items-center mt-28 text-white">
+				<h2 className="text-5xl mb-4 font-semibold">Home for Rent</h2>
+				<p className="text-2xl">
+					<a href="" className="text-yellow-700 ">
+						<NavLink to="/">Home </NavLink>
+					</a>
+					/ Select your preferred home and go for it
+				</p>
+			</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{shortletData.slice(11, 17).map((shortlet) => (
+			<div className="container mx-auto px-4 py-20">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 z-10">
+					{shortletData.map((shortlet) => (
 						<div
 							key={shortlet.id}
 							className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2"
@@ -113,14 +108,14 @@ const ShortListShowcase = () => {
 					))}
 				</div>
 
-				<div className="text-center mt-12" data-aos="fade-down">
+				{/* <div className="text-center mt-12" data-aos="fade-down">
 					<a className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl">
-						<NavLink to="/shortlets">View All Shortlets</NavLink>
+						View All Properties
 					</a>
-				</div>
+				</div> */}
 			</div>
-		</section>
+		</>
 	);
 };
 
-export default ShortListShowcase;
+export default ShortletContent;
