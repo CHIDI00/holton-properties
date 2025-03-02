@@ -31,7 +31,10 @@ const BookingMadeEasy = () => {
 
 	return (
 		<div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-			<h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+			<h2
+				className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center"
+				// data-aos="fade-up"
+			>
 				Booking Your Home
 				<br />
 				<span className="text-blue-600">Now Made Easy.</span>
@@ -42,7 +45,7 @@ const BookingMadeEasy = () => {
 				<div className="absolute z-0 w-2 h-full bg-blue-800 shadow-md inset-0 left-13 md:mx-auto md:right-0 md:left-0 "></div>
 
 				{/* Steps */}
-				<div className="relative z-10">
+				<div className="relative z-10" data-aos="fade-up">
 					{/* Number circle */}
 					<div className="timeline-number">1</div>
 					{/* Content box */}
@@ -68,7 +71,7 @@ const BookingMadeEasy = () => {
 				</div>
 
 				{/* Steps */}
-				<div className="relative z-10">
+				<div className="relative z-10" data-aos="fade-up">
 					{/* Number circle */}
 					<div className="timeline-number">2</div>
 					{/* Content box */}
@@ -91,7 +94,7 @@ const BookingMadeEasy = () => {
 				</div>
 
 				{/* Steps */}
-				<div className="relative z-10">
+				<div className="relative z-10" data-aos="fade-up">
 					{/* Number circle */}
 					<div className="timeline-number">3</div>
 					{/* Content box */}
@@ -117,7 +120,7 @@ const BookingMadeEasy = () => {
 				</div>
 
 				{/* Steps */}
-				<div className="relative z-10">
+				<div className="relative z-10" data-aos="fade-up">
 					{/* Number circle */}
 					<div className="timeline-number">4</div>
 					{/* Content box */}

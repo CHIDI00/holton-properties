@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
 			<div className="container mx-auto px-4">
 				<div className="flex flex-wrap items-center">
 					{/* Left side - Image */}
-					<div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+					<div className="w-full lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-right">
 						<img
 							src="/gallery/gallery-thum-06.jpg"
 							alt="Luxury Property View"
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
 					<div className="w-full py-32 lg:w-1/2 lg:pl-16">
 						<div className="space-y-8">
 							{/* Best Price */}
-							<div className="flex items-start gap-4">
+							<div className="flex items-start gap-4" data-aos="fade-up">
 								<div className=" text-blue-600 p-2 mt-1">
 									<HiCheckCircle size={40} />
 								</div>
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
 							</div>
 
 							{/* High-Quality Standards */}
-							<div className="flex items-start gap-4">
+							<div className="flex items-start gap-4" data-aos="fade-up">
 								<div className="text-blue-600 p-2 rounded-full mt-1">
 									<HiCheckCircle size={40} />
 								</div>
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
 							</div>
 
 							{/* Local market Insights */}
-							<div className="flex items-start gap-4">
+							<div className="flex items-start gap-4" data-aos="fade-up">
 								<div className=" text-blue-600 p-2 rounded-full mt-1">
 									<HiCheckCircle size={40} />
 								</div>
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
 							</div>
 
 							{/* Trusted Reputation */}
-							<div className="flex items-start gap-4">
+							<div className="flex items-start gap-4" data-aos="fade-up">
 								<div className=" text-blue-600 p-2 rounded-full mt-1">
 									<HiCheckCircle size={40} />
 								</div>

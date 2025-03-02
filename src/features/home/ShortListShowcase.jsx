@@ -78,14 +78,17 @@ const ShortListShowcase = () => {
 				<div className="text-center mb-12">
 					<h2
 						className="text-5xl font-bold text-[#0B0B1F] mb-4"
-						// data-aos="fade-up"
+						data-aos="fade-up"
 					>
 						Shortlist Showcase
 					</h2>
-					<div className="flex items-center justify-center gap-2 mb-4">
+					<div
+						className="flex items-center justify-center gap-2 mb-4"
+						data-aos="fade-up"
+					>
 						<span className="w-40 h-2 bg-blue-800 rounded-full"></span>
 					</div>
-					<p className="text-gray-500 text-2xl">
+					<p className="text-gray-500 text-2xl" data-aos="fade-up">
 						Explore our handpicked selection of premium shortlets
 					</p>
 				</div>
@@ -95,7 +98,7 @@ const ShortListShowcase = () => {
 						<div
 							key={property.id}
 							className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2"
-							// data-aos="fade-up"
+							data-aos="fade-up"
 						>
 							<div className="relative">
 								<img
@@ -158,7 +161,7 @@ const ShortListShowcase = () => {
 					))}
 				</div>
 
-				<div className="text-center mt-12">
+				<div className="text-center mt-12" data-aos="fade-down">
 					<a
 						href="buy-property-grid.html"
 						className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl"

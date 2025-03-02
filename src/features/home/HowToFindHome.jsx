@@ -21,7 +21,7 @@ const HowToFindHome = () => {
 					{/* Card 1 */}
 					<div
 						className="bg-white p-8 rounded-lg shadow-lg text-center"
-						data-aos="fade-up"
+						// data-aos="fade-up"
 					>
 						<div className="w-36 h-36 bg-[#6c5ce7] rounded-full flex items-center justify-center mx-auto mb-10">
 							<img
@@ -42,7 +42,7 @@ const HowToFindHome = () => {
 					{/* Card 2 */}
 					<div
 						className="bg-white p-8 rounded-lg shadow-lg text-center"
-						data-aos="fade-up"
+						// data-aos="fade-up"
 					>
 						<div className="w-36 h-36 bg-[#ff6b6b] rounded-full flex items-center justify-center mx-auto mb-10">
 							<img
@@ -63,7 +63,7 @@ const HowToFindHome = () => {
 					{/* Card 3 */}
 					<div
 						className="bg-white p-10 rounded-lg shadow-lg text-center"
-						data-aos="fade-up"
+						// data-aos="fade-up"
 					>
 						<div className="w-36 h-36 bg-[#2ecc71] rounded-full flex items-center justify-center mx-auto mb-10">
 							<img

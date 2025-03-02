@@ -41,7 +41,7 @@
 	outline: none;
 	text-transform: capitalize;
 	box-sizing: border-box;
-	transition: 0.3s ease-in-out all;
+	/* transition: 0.3s ease-in-out all; */
 }
 
 body {
