@@ -8,6 +8,7 @@ import Properties from "./pages/Properties";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Shortlets from "./pages/Shortlets";
+import PropertyDetails from "./features/properties/PropertyDetails";
 
 function App() {
 	useEffect(() => {
@@ -23,6 +24,10 @@ function App() {
 				<Route element={<AppLayout />}>
 					<Route path="/" element={<Home />} />
 					<Route path="/properties" element={<Properties />} />
+					<Route
+						path="/properties/property_detail_id"
+						element={<PropertyDetails />}
+					/>
 					<Route path="/shortlets" element={<Shortlets />} />
 				</Route>
 			</Routes>

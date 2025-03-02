@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const AppLayout = () => {
 	return (
 		<div className="min-h-screen w-screen ">
-			<main className="w-screen">
+			<main className="w-full">
 				<NavBar />
 				<Outlet />
 			</main>

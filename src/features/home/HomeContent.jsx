@@ -23,31 +23,29 @@ const HomeContent = () => {
 	return (
 		<>
 			<section
-				className="relative w-screen h-[85vh] bg-cover bg-center bg-fixed bg-no-repeat transition-all duration-1000 ease-in-out"
+				className="relative w-screen h-[85vh] mt-24 bg-cover bg-center bg-fixed bg-no-repeat transition-all duration-1000 ease-in-out"
 				style={{
 					backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
 				}}
 			>
 				<div className="absolute inset-0 bg-black bg-opacity-50"></div>
-				<div className="relative z-10 w-[70%] h-full container flex flex-col gap-7 items-center justify-center mx-auto px-4 py-24">
+				<div className="relative z-10 w-full h-full container flex flex-col gap-7 items-center justify-center mx-auto px-10 py-24  border-2 border-red-600">
 					<div className="flex flex-wrap -mx-4">
-						<div className="w-full  px-4">
-							<div
-								className="flex flex-col w-[70%] text-left  justify-center align-sub- mb-12"
-								data-aos="fade-down"
-							>
-								<h1 className="text-6xl  lg:text-[6rem] font-bold text-white mb-4">
-									Find Your Best Dream House for{" "}
-									<span className="text-blue-900">Rental, Buy & Sell...</span>
-								</h1>
-								<p className="text-gray-200 text-[2rem]">
-									Properties for buy / rent in in your location. We have more
-									than 3000+ listings for you to choose
-								</p>
-							</div>
+						<div
+							className="flex flex-col w-full text-left  justify-center align-sub- mb-12"
+							data-aos="fade-down"
+						>
+							<h1 className="text-6xl  lg:text-[6rem] font-bold text-white mb-4">
+								Find Your Best Dream House for{" "}
+								<span className="text-blue-900">Rental, Buy & Sell...</span>
+							</h1>
+							<p className="text-gray-200 text-[2rem]">
+								Properties for buy / rent in in your location. We have more than
+								3000+ listings for you to choose
+							</p>
 						</div>
 					</div>
-					<div className="flex flex-wrap bg-slate-600">
+					<div className="flex flex-wrap">
 						<div className="w-full px-4 py-8">
 							<div
 								className="bg-white rounded-lg shadow-lg p-10"
