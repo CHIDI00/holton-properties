@@ -1,9 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+
 import AppLayout from "./ui/AppLayout";
 import Home from "./pages/Home";
+import Properties from "./pages/Properties";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 function App() {
 	useEffect(() => {
@@ -18,6 +21,7 @@ function App() {
 			<Routes>
 				<Route element={<AppLayout />}>
 					<Route path="/" element={<Home />} />
+					<Route path="/properties" element={<Properties />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
