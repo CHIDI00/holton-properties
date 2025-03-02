@@ -1,75 +1,76 @@
 import React from "react";
 import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
+import { properties } from "../properties/propertiesData";
 
 const PropertyShowcase = () => {
-	const properties = [
-		{
-			id: 1,
-			image: "/gallery/gallery-thum-01.jpg",
-			title: "Modern Apartment in City Center",
-			location: "123 Urban Street, Downtown",
-			price: "$1,250,000",
-			beds: 3,
-			baths: 2,
-			area: "1,200 sqft",
-			type: "For Sale",
-		},
-		{
-			id: 2,
-			image: "/gallery/gallery-thum-02.jpg",
-			title: "Luxury Villa with Ocean View",
-			location: "456 Coastal Road, Beachside",
-			price: "$2,500,000",
-			beds: 5,
-			baths: 4,
-			area: "3,500 sqft",
-			type: "For Sale",
-		},
-		{
-			id: 3,
-			image: "/gallery/gallery-thum-03.jpg",
-			title: "Cozy Studio in Historic District",
-			location: "789 Heritage Lane, Old Town",
-			price: "$950/month",
-			beds: 1,
-			baths: 1,
-			area: "650 sqft",
-			type: "For Rent",
-		},
-		{
-			id: 4,
-			image: "/gallery/gallery-thum-04.jpg",
-			title: "Family Home with Garden",
-			location: "101 Suburban Drive, Green Valley",
-			price: "$1,750,000",
-			beds: 4,
-			baths: 3,
-			area: "2,200 sqft",
-			type: "For Sale",
-		},
-		{
-			id: 5,
-			image: "/gallery/gallery-thum-05.jpg",
-			title: "Penthouse with City Skyline View",
-			location: "202 High Rise Avenue, Uptown",
-			price: "$3,200,000",
-			beds: 3,
-			baths: 3,
-			area: "2,800 sqft",
-			type: "For Sale",
-		},
-		{
-			id: 6,
-			image: "/gallery/gallery-thum-06.jpg",
-			title: "Modern Townhouse Near Park",
-			location: "303 Park View Road, Greenside",
-			price: "$1,450/month",
-			beds: 2,
-			baths: 2,
-			area: "1,100 sqft",
-			type: "For Rent",
-		},
-	];
+	// const properties = [
+	// 	{
+	// 		id: 1,
+	// 		image: "/gallery/gallery-thum-01.jpg",
+	// 		title: "Modern Apartment in City Center",
+	// 		location: "123 Urban Street, Downtown",
+	// 		price: "$1,250,000",
+	// 		beds: 3,
+	// 		baths: 2,
+	// 		area: "1,200 sqft",
+	// 		type: "For Sale",
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		image: "/gallery/gallery-thum-02.jpg",
+	// 		title: "Luxury Villa with Ocean View",
+	// 		location: "456 Coastal Road, Beachside",
+	// 		price: "$2,500,000",
+	// 		beds: 5,
+	// 		baths: 4,
+	// 		area: "3,500 sqft",
+	// 		type: "For Sale",
+	// 	},
+	// 	{
+	// 		id: 3,
+	// 		image: "/gallery/gallery-thum-03.jpg",
+	// 		title: "Cozy Studio in Historic District",
+	// 		location: "789 Heritage Lane, Old Town",
+	// 		price: "$950/month",
+	// 		beds: 1,
+	// 		baths: 1,
+	// 		area: "650 sqft",
+	// 		type: "For Rent",
+	// 	},
+	// 	{
+	// 		id: 4,
+	// 		image: "/gallery/gallery-thum-04.jpg",
+	// 		title: "Family Home with Garden",
+	// 		location: "101 Suburban Drive, Green Valley",
+	// 		price: "$1,750,000",
+	// 		beds: 4,
+	// 		baths: 3,
+	// 		area: "2,200 sqft",
+	// 		type: "For Sale",
+	// 	},
+	// 	{
+	// 		id: 5,
+	// 		image: "/gallery/gallery-thum-05.jpg",
+	// 		title: "Penthouse with City Skyline View",
+	// 		location: "202 High Rise Avenue, Uptown",
+	// 		price: "$3,200,000",
+	// 		beds: 3,
+	// 		baths: 3,
+	// 		area: "2,800 sqft",
+	// 		type: "For Sale",
+	// 	},
+	// 	{
+	// 		id: 6,
+	// 		image: "/gallery/gallery-thum-06.jpg",
+	// 		title: "Modern Townhouse Near Park",
+	// 		location: "303 Park View Road, Greenside",
+	// 		price: "$1,450/month",
+	// 		beds: 2,
+	// 		baths: 2,
+	// 		area: "1,100 sqft",
+	// 		type: "For Rent",
+	// 	},
+	// ];
 
 	return (
 		<section className="w-screen py-24 bg-gray-100">
@@ -96,7 +97,7 @@ const PropertyShowcase = () => {
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{properties.map((property) => (
+					{properties.slice(5, 10).map((property) => (
 						<div
 							key={property.id}
 							className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2"

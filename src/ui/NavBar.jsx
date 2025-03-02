@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -27,16 +28,13 @@ const NavBar = () => {
 				<nav className="hidden lg:block">
 					<ul className="flex space-x-8 items-center text-gray-700">
 						<li>
-							<a href="index.html" className="hover:text-[#0B0B1F] font-medium">
-								Home
+							<a className="hover:text-[#0B0B1F] font-medium">
+								<NavLink to="/">Home</NavLink>
 							</a>
 						</li>
 						<li className="relative group">
-							<a
-								href="javascript:void(0);"
-								className="flex items-center hover:text-[#0B0B1F] font-medium"
-							>
-								Properties
+							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+								<NavLink to="/properties">Properties</NavLink>
 							</a>
 							{/* <ul
 								className="absolute left-0 bottom-[-150px] border-t-2 border-t-[#0B0B1F] mt-2 py-2 w-56 gap-9 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
@@ -77,11 +75,8 @@ const NavBar = () => {
 							</ul> */}
 						</li>
 						<li className="relative group">
-							<a
-								href="javascript:void(0);"
-								className="flex items-center hover:text-[#0B0B1F] font-medium"
-							>
-								Listing
+							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+								<NavLink to="/properties">Listing</NavLink>
 							</a>
 							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
@@ -111,11 +106,8 @@ const NavBar = () => {
 							</ul> */}
 						</li>
 						<li className="relative group">
-							<a
-								href="javascript:void(0);"
-								className="flex items-center hover:text-[#0B0B1F] font-medium"
-							>
-								Agency
+							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+								<NavLink to="/properties">Agency</NavLink>
 							</a>
 							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
@@ -145,11 +137,8 @@ const NavBar = () => {
 							</ul> */}
 						</li>
 						<li className="relative group">
-							<a
-								href="javascript:void(0);"
-								className="flex items-center hover:text-[#0B0B1F] font-medium"
-							>
-								Pages
+							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+								<NavLink to="/properties">Pages</NavLink>
 							</a>
 							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
@@ -195,11 +184,8 @@ const NavBar = () => {
 							</ul> */}
 						</li>
 						<li className="relative group">
-							<a
-								href="javascript:void(0);"
-								className="flex items-center hover:text-[#0B0B1F] font-medium"
-							>
-								Blog
+							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+								<NavLink to="/properties">Blog</NavLink>
 							</a>
 							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>

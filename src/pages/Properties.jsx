@@ -3,7 +3,7 @@ import PropertiesContent from "../features/properties/PropertiesContent";
 
 const Properties = () => {
 	return (
-		<div>
+		<div className="w-screen ">
 			<PropertiesContent />
 		</div>
 	);
