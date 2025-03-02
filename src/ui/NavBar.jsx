@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const NavBar = () => {
+	const [isSticky, setIsSticky] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsSticky(window.scrollY > 0);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<div className="bg-white shadow-sm text-2xl">
-			<div className="container mx-auto px-4 py-6 flex justify-between items-center">
+		<div
+			className={`bg-white shadow-sm text-2xl fixed w-full top-0 z-50 transition-all duration-300 ${
+				isSticky ? "shadow-md" : ""
+			}`}
+		>
+			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 				<img src="/HOLTONicon-dark.png" alt="Holton Logo" className="h-20" />
 
 				<nav className="hidden lg:block">
@@ -19,21 +37,8 @@ const NavBar = () => {
 								className="flex items-center hover:text-[#0B0B1F] font-medium"
 							>
 								Listing
-								<svg
-									className="w-4 h-4 ml-1"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M19 9l-7 7-7-7"
-									/>
-								</svg>
 							</a>
-							<ul
+							{/* <ul
 								className="absolute left-0 bottom-[-150px] border-t-2 border-t-[#0B0B1F] mt-2 py-2 w-56 gap-9 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
 								// data-aos="fade-up"
 							>
@@ -69,7 +74,7 @@ const NavBar = () => {
 										Rent Property List
 									</a>
 								</li>
-							</ul>
+							</ul> */}
 						</li>
 						<li className="relative group">
 							<a
@@ -77,21 +82,8 @@ const NavBar = () => {
 								className="flex items-center hover:text-[#0B0B1F] font-medium"
 							>
 								Agent
-								<svg
-									className="w-4 h-4 ml-1"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M19 9l-7 7-7-7"
-									/>
-								</svg>
 							</a>
-							<ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
 									<a
 										href="agent-grid.html"
@@ -116,7 +108,7 @@ const NavBar = () => {
 										Agent Details
 									</a>
 								</li>
-							</ul>
+							</ul> */}
 						</li>
 						<li className="relative group">
 							<a
@@ -124,21 +116,8 @@ const NavBar = () => {
 								className="flex items-center hover:text-[#0B0B1F] font-medium"
 							>
 								Agency
-								<svg
-									className="w-4 h-4 ml-1"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M19 9l-7 7-7-7"
-									/>
-								</svg>
 							</a>
-							<ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
 									<a
 										href="agency-grid.html"
@@ -163,7 +142,7 @@ const NavBar = () => {
 										Agency Details
 									</a>
 								</li>
-							</ul>
+							</ul> */}
 						</li>
 						<li className="relative group">
 							<a
@@ -171,21 +150,8 @@ const NavBar = () => {
 								className="flex items-center hover:text-[#0B0B1F] font-medium"
 							>
 								Pages
-								<svg
-									className="w-4 h-4 ml-1"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M19 9l-7 7-7-7"
-									/>
-								</svg>
 							</a>
-							<ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
 									<a
 										href="about-us.html"
@@ -226,7 +192,7 @@ const NavBar = () => {
 										Privacy Policy
 									</a>
 								</li>
-							</ul>
+							</ul> */}
 						</li>
 						<li className="relative group">
 							<a
@@ -234,21 +200,8 @@ const NavBar = () => {
 								className="flex items-center hover:text-[#0B0B1F] font-medium"
 							>
 								Blog
-								<svg
-									className="w-4 h-4 ml-1"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M19 9l-7 7-7-7"
-									/>
-								</svg>
 							</a>
-							<ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<li>
 									<a
 										href="blog-grid.html"
@@ -273,7 +226,7 @@ const NavBar = () => {
 										Blog Details
 									</a>
 								</li>
-							</ul>
+							</ul> */}
 						</li>
 						<li>
 							<a

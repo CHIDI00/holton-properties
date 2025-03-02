@@ -23,7 +23,7 @@ const HomeContent = () => {
 	return (
 		<>
 			<section
-				className="relative w-full h-[78vh] bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
+				className="relative w-screen h-[85vh] bg-cover bg-center bg-fixed bg-no-repeat transition-all duration-1000 ease-in-out"
 				style={{
 					backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
 				}}
