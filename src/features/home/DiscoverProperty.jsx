@@ -18,16 +18,17 @@ const DiscoverProperty = () => {
 						fugiat quasi eveniet velit. Lorem ipsum dolor sit amet consectetur,
 					</p>
 				</div>
-				<div className="w-full h-full  borer-2 flex flex-col justify-center items-center md:flex-row gap-6">
+
+				<div className="w-full min-h-[500px] border-2 flex flex-col justify-center items-center md:flex-row gap-6">
 					{/* Left container */}
 					<div
-						className="w-full h-[50%] md:h-[100%] bg-[url('/gallery/gallery-14.jpg')] bg-cover bg-center bg-no-repeat rounded-md"
+						className="w-full h-[300px] md:h-[500px] bg-[url('/gallery/gallery-14.jpg')] bg-cover bg-center bg-no-repeat rounded-md"
 						data-aos="fade-up"
 					></div>
 					{/* Right container */}
-					<div className="flex flex-col w-full h-[50%] md:h-full gap-6">
+					<div className="flex flex-col w-full h-[300px] md:h-[500px] gap-6">
 						{/* Top Right container */}
-						<div className="flex gap-6  w-full h-1/2 " data-aos="fade-up">
+						<div className="flex gap-6 w-full h-1/2" data-aos="fade-up">
 							<div className="w-1/2 h-full bg-[url('/gallery/gallery-15.jpg')] bg-cover bg-center bg-no-repeat rounded-md"></div>
 							<div className="w-1/2 h-full bg-[url('/gallery/gallery-16.jpg')] bg-cover bg-center bg-no-repeat rounded-md"></div>
 						</div>

@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
 import { HiHeart } from "react-icons/hi";
 
 const ShortListShowcase = () => {
+	const [favorites, setFavorites] = useState({});
+	
+	const toggleFavorite = (id) => {
+		setFavorites(prev => ({
+			...prev,
+			[id]: !prev[id]
+		}));
+	};
+	
 	const properties = [
 		{
 			id: 1,
@@ -112,8 +121,14 @@ const ShortListShowcase = () => {
 								<div className="absolute bottom-4 right-4 text-white px-4 py-2 rounded-md font-bold text-4xl">
 									{property.price}
 								</div>
-								<div className="absolute top-4 right-4 px-2 py-2 border-2 border-white rounded-[50%]">
-									<HiHeart style={{ color: "#fff" }} size={26} />
+								<div 
+									className={`absolute top-4 right-4 px-2 py-2 border-2 ${favorites[property.id] ? 'bg-red-600 border-red-600' : 'border-white hover:bg-red-600 hover:border-red-600'} rounded-[50%] transition-all cursor-pointer`}
+									onClick={() => toggleFavorite(property.id)}
+								>
+									<HiHeart 
+										style={{ color: favorites[property.id] ? "#fff" : "#fff" }} 
+										size={26} 
+									/>
 								</div>
 							</div>
 
