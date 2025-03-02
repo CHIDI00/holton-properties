@@ -2,10 +2,10 @@ import React from "react";
 
 const DiscoverProperty = () => {
 	return (
-		<section className="w-screen py-24">
-			<div className="container  h-[60rem] md:h-[60rem] mx-auto px-4 ">
+		<section className="w-screen h-auto py-24">
+			<div className="container flex flex-col items-center justify-between h-full w-full  mx-auto px-4 ">
 				<div
-					className="w-full md:h-[20%]  flex flex-col justify-between items-end gap-6 md:gap36 mb-11 md:flex-row "
+					className="w-full h-[30%] md:h-[20%]  flex flex-col justify-between items-end gap-6 md:gap36 mb-11 md:flex-row "
 					data-aos="fade-up"
 				>
 					<h2 className="w-full text-6xl font-bold text-[#0B0B1F] md:w-[50%] md:text-8xl">
@@ -16,18 +16,9 @@ const DiscoverProperty = () => {
 						nulla non in praesentium quo natus pariatur, illum magnam mollitia
 						voluptatem corrupti. Dolore voluptatibus laboriosam culpa quidem
 						fugiat quasi eveniet velit. Lorem ipsum dolor sit amet consectetur,
-						adipisicing elit. Nulla molestiae voluptas blanditiis quas amet
-						eligendi sunt fugiat harum, sint nisi dolore earum inventore
-						adipisci placeat voluptatibus quis alias rem fugit? Lorem ipsum,
-						dolor sit amet consectetur adipisicing elit. Voluptates vero earum
-						ipsa molestiae veniam quasi? Eligendi assumenda enim temporibus
-						dignissimos, harum odio. Numquam eligendi quidem aspernatur expedita
-						consectetur cupiditate veniam harum cumque sapiente. Exercitationem
-						fugiat facilis dolor, illo nulla nihil, cumque iste temporibus
-						asperiores enim mollitia nisi dolores quidem. Minus!
 					</p>
 				</div>
-				<div className="w-full h-full md:h-[80%]  borer-2 flex flex-col justify-center items-center md:flex-row gap-6">
+				<div className="w-full h-full  borer-2 flex flex-col justify-center items-center md:flex-row gap-6">
 					{/* Left container */}
 					<div
 						className="w-full h-[50%] md:h-[100%] bg-[url('/gallery/gallery-14.jpg')] bg-cover bg-center bg-no-repeat rounded-md"
