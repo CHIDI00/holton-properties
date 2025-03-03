@@ -45,102 +45,38 @@ const BookingMadeEasy = () => {
 				<div className="absolute z-0 w-2 h-full bg-blue-800 shadow-md inset-0 left-13 md:mx-auto md:right-0 md:left-0 "></div>
 
 				{/* Steps */}
-				<div className="relative z-10" data-aos="fade-up">
-					{/* Number circle */}
-					<div className="timeline-number">1</div>
-					{/* Content box */}
-					<div className="timeline-container timeline-container-left">
+				{steps.map((step, index) => (
+					<div className="relative z-10" data-aos="fade-up">
+						{/* Number circle */}
+						<div className="timeline-number">{step.number}</div>
+						{/* Content box */}
 						<div
-							className="timeline-pointer timeline-pointer-left"
-							aria-hidden="true"
-						></div>
-						<div className=" bg-blue-950 p-6 rounded-md shadow-md">
-							<p
-								className="text-3xl text-white mb-3"
-								style={{ fontWeight: "bold" }}
-							>
-								Finalize The Deal
-							</p>
-							<p className="text-2xl text-gray-400">
-								Once you've found the perfect home, our team will assist you in
-								finalizing the deal. From negotiating the best terms to ensuring
-								a smooth transaction process, we'll support you every step.
-							</p>
+							className={cn(
+								"timeline-container",
+								index % 2 === 0
+									? "timeline-container"
+									: "timeline-container-left"
+							)}
+						>
+							<div
+								className={cn(
+									"timeline-pointer",
+									index % 2 === 0 ? "timeline-pointer" : "timeline-pointer-left"
+								)}
+								aria-hidden="true"
+							></div>
+							<div className=" bg-blue-950 p-6 rounded-md shadow-md">
+								<p
+									className="text-3xl text-white mb-3"
+									style={{ fontWeight: "bold" }}
+								>
+									{step.title}
+								</p>
+								<p className="text-2xl text-gray-400">{step.description}</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				{/* Steps */}
-				<div className="relative z-10" data-aos="fade-up">
-					{/* Number circle */}
-					<div className="timeline-number">2</div>
-					{/* Content box */}
-					<div className="timeline-container">
-						<div className="timeline-pointer" aria-hidden="true"></div>
-						<div className=" bg-blue-950 p-6 rounded-md shadow-md">
-							<p
-								className="text-3xl text-white mb-3"
-								style={{ fontWeight: "bold" }}
-							>
-								Finalize The Deal
-							</p>
-							<p className="text-2xl text-gray-400">
-								Once you've found the perfect home, our team will assist you in
-								finalizing the deal. From negotiating the best terms to ensuring
-								a smooth transaction process, we'll support you every step.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				{/* Steps */}
-				<div className="relative z-10" data-aos="fade-up">
-					{/* Number circle */}
-					<div className="timeline-number">3</div>
-					{/* Content box */}
-					<div className="timeline-container timeline-container-left">
-						<div
-							className="timeline-pointer timeline-pointer-left"
-							aria-hidden="true"
-						></div>
-						<div className=" bg-blue-950 p-6 rounded-md shadow-md">
-							<p
-								className="text-3xl text-white mb-3"
-								style={{ fontWeight: "bold" }}
-							>
-								Finalize The Deal
-							</p>
-							<p className="text-2xl text-gray-400">
-								Once you've found the perfect home, our team will assist you in
-								finalizing the deal. From negotiating the best terms to ensuring
-								a smooth transaction process, we'll support you every step.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				{/* Steps */}
-				<div className="relative z-10" data-aos="fade-up">
-					{/* Number circle */}
-					<div className="timeline-number">4</div>
-					{/* Content box */}
-					<div className="timeline-container">
-						<div className="timeline-pointer" aria-hidden="true"></div>
-						<div className=" bg-blue-950 p-6 rounded-md shadow-md">
-							<p
-								className="text-3xl text-white mb-3"
-								style={{ fontWeight: "bold" }}
-							>
-								Finalize The Deal
-							</p>
-							<p className="text-2xl text-gray-400">
-								Once you've found the perfect home, our team will assist you in
-								finalizing the deal. From negotiating the best terms to ensuring
-								a smooth transaction process, we'll support you every step.
-							</p>
-						</div>
-					</div>
-				</div>
+				))}
 			</div>
 		</div>
 	);
