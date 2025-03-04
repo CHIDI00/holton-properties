@@ -1,7 +1,5 @@
-import React from "react";
-import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
-import { properties } from "../properties/propertiesData";
 import PropertyCard from "../properties/PropertyCard";
+import { NavLink } from "react-router-dom";
 
 const PropertyShowcase = () => {
 	return (
@@ -35,7 +33,7 @@ const PropertyShowcase = () => {
 						href="buy-property-grid.html"
 						className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl"
 					>
-						View All Properties
+						<NavLink to="/properties">View All Shortlets</NavLink>
 					</a>
 				</div>
 			</div>

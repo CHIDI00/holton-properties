@@ -9,6 +9,15 @@ export const properties = [
 		baths: 2,
 		area: "1,200 sqft",
 		type: "For Sale",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 2,
@@ -20,6 +29,15 @@ export const properties = [
 		baths: 4,
 		area: "3,500 sqft",
 		type: "For Sale",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 3,
@@ -31,6 +49,15 @@ export const properties = [
 		baths: 1,
 		area: "650 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 4,
@@ -42,6 +69,15 @@ export const properties = [
 		baths: 3,
 		area: "2,200 sqft",
 		type: "For Sale",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 5,
@@ -53,6 +89,15 @@ export const properties = [
 		baths: 3,
 		area: "2,800 sqft",
 		type: "For Sale",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -64,6 +109,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -75,6 +129,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -86,6 +149,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -97,6 +169,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -108,6 +189,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -119,6 +209,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -130,6 +229,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -141,6 +249,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -152,6 +269,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -163,6 +289,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -174,6 +309,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -185,6 +329,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -196,6 +349,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -207,6 +369,15 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 	{
 		id: 6,
@@ -218,5 +389,14 @@ export const properties = [
 		baths: 2,
 		area: "1,100 sqft",
 		type: "For Rent",
+		detailImages: [
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+			"/gallery/gallery-thum-01.jpg",
+		],
+		description:
+			"Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!,This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley.Located right in the heart of Upstate NYs Amish farm Country, this land is certified organic makingit extremely rare! Good road frontage on a paved county road with utilities make it an amazingsetting for your dream country getaway! If you like views, you must see this property!This propertyis mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right inthe heart of Upstate NYs Amish farm Country, this land is certified organic making it extremelyrare! Good road frontage on a paved county road with utilities make it an amazing setting for yourdream country getaway! If you like views, you must see this property!",
 	},
 ];

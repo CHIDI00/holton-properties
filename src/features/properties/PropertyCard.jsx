@@ -1,7 +1,9 @@
 import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
 import { properties } from "./propertiesData";
+import { useNavigate } from "react-router-dom";
 
 const PropertyCard = ({ limit }) => {
+	const navigate = useNavigate();
 	// Apply the limit if provided
 	const displayData = limit ? properties.slice(7, limit) : properties;
 
@@ -64,7 +66,10 @@ const PropertyCard = ({ limit }) => {
 						</div>
 
 						<div className="px-6 pb-6">
-							<button className="w-full bg-blue-950 hover:bg-blue-900 text-white py-3 rounded-md transition-colors font-medium text-2xl">
+							<button
+								className="w-full bg-blue-950 hover:bg-blue-900 text-white py-3 rounded-md transition-colors font-medium text-2xl"
+								onClick={() => navigate("/properties/property_detail_id")}
+							>
 								View Details
 							</button>
 						</div>

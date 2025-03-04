@@ -36,8 +36,8 @@ const HomeContent = () => {
 							data-aos="fade-down"
 						>
 							<h1 className="text-6xl  lg:text-[6rem] font-bold text-white mb-4">
-								Find Your Best Dream House for{" "}
-								<span className="text-blue-900">Rental, Buy & Sell...</span>
+								Connecting you{" "}
+								<span className="text-gray-400">to the home</span> you love
 							</h1>
 							<p className="text-gray-200 text-[2rem]">
 								Properties for buy / rent in in your location. We have more than
