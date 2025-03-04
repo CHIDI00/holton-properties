@@ -36,7 +36,7 @@ export default function ImageSlider({ imageList }) {
 						<img
 							src={image}
 							alt={`Property image ${index + 1}`}
-							className="w-full h-full object-cover rounded-xl"
+							className="w-full h-full object-cover rounded-xl cursor-grab"
 						/>
 					</SwiperSlide>
 				))}
@@ -44,12 +44,12 @@ export default function ImageSlider({ imageList }) {
 			<Swiper
 				onSwiper={setThumbsSwiper}
 				loop={true}
-				spaceBetween={10}
+				spaceBetween={5}
 				slidesPerView={4}
 				freeMode={true}
 				watchSlidesProgress={true}
 				modules={[FreeMode, Navigation, Thumbs]}
-				className="w-full h-[100px] mt-2"
+				className="w-full h-[65px] md:h-[100px] mt-2"
 			>
 				{images.map((image, index) => (
 					<SwiperSlide
