@@ -24,10 +24,7 @@ function App() {
 				<Route element={<AppLayout />}>
 					<Route path="/" element={<Home />} />
 					<Route path="/properties" element={<Properties />} />
-					<Route
-						path="/properties/property_detail_id"
-						element={<PropertyDetails />}
-					/>
+					<Route path="/properties/:propertyId" element={<PropertyDetails />} />
 					<Route path="/shortlets" element={<Shortlets />} />
 				</Route>
 			</Routes>

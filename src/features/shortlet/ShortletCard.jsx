@@ -48,7 +48,7 @@ const ShortletCard = ({ limit }) => {
 								>
 									<HiHeart
 										style={{ color: favorites[shortlet.id] ? "#fff" : "#fff" }}
-										size={26}
+										size={20}
 									/>
 								</div>
 							</div>
