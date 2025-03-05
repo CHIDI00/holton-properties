@@ -4,11 +4,12 @@ import { useEffect } from "react";
 import AppLayout from "./ui/AppLayout";
 import Home from "./pages/Home";
 import Properties from "./pages/Properties";
+import Shortlets from "./pages/Shortlets";
+import PropertyDetails from "./features/properties/PropertyDetails";
+import ShortletDetails from "./features/shortlet/ShortletDetails";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Shortlets from "./pages/Shortlets";
-import PropertyDetails from "./features/properties/PropertyDetails";
 
 function App() {
 	useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
 					<Route path="/properties" element={<Properties />} />
 					<Route path="/properties/:propertyId" element={<PropertyDetails />} />
 					<Route path="/shortlets" element={<Shortlets />} />
+					<Route path="/shortlets/:shortletId" element={<ShortletDetails />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

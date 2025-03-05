@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const PropertyCard = ({ limit }) => {
-	const navigate = useNavigate();
 	// Apply the limit if provided
 	const displayData = limit ? properties.slice(7, limit) : properties;
 

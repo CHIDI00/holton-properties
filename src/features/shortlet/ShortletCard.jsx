@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
 import { HiHeart } from "react-icons/hi";
 import { shortletData } from "../shortlet/shortletData";
+import { Link } from "react-router-dom";
 
 const ShortletCard = ({ limit }) => {
 	const [favorites, setFavorites] = useState({});
@@ -89,9 +90,12 @@ const ShortletCard = ({ limit }) => {
 							</div>
 
 							<div className="px-6 pb-6">
-								<button className="w-full bg-blue-950 hover:bg-blue-900 text-white py-3 rounded-md transition-colors font-medium text-2xl">
+								<Link
+									to={`/properties/${shortletData.id}`}
+									className="w-full bg-blue-950 hover:bg-blue-900 text-white py-3 rounded-md transition-colors font-medium text-2xl block text-center"
+								>
 									View Details
-								</button>
+								</Link>
 							</div>
 						</div>
 					))}
