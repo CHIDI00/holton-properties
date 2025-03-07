@@ -7,9 +7,11 @@ import Properties from "./pages/Properties";
 import Shortlets from "./pages/Shortlets";
 import PropertyDetails from "./features/properties/PropertyDetails";
 import ShortletDetails from "./features/shortlet/ShortletDetails";
+import ContactUs from "./pages/ContactUs";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
 	useEffect(() => {
@@ -28,6 +30,8 @@ function App() {
 					<Route path="/properties/:propertyId" element={<PropertyDetails />} />
 					<Route path="/shortlets" element={<Shortlets />} />
 					<Route path="/shortlets/:shortletId" element={<ShortletDetails />} />
+					<Route path="/about-us" element={<AboutUs />} />
+					<Route path="/contact-us" element={<ContactUs />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

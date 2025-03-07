@@ -16,11 +16,11 @@ const PropertyCard = ({ limit }) => {
 						className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2"
 						data-aos="fade-up"
 					>
-						<div className="relative">
+						<div className="relative overflow-hidden">
 							<img
 								src={property.image}
 								alt={property.title}
-								className="w-full h-96 object-cover"
+								className="w-full h-96 object-cover transition-transform duration-500 hover:scale-110"
 							/>
 							<div className="absolute top-4 left-4 bg-blue-950 text-white text-xl px-4 py-3 rounded-xl">
 								{property.type}

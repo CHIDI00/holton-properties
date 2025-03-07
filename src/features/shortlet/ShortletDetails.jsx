@@ -34,10 +34,10 @@ const ShortletDetails = () => {
 					The shortlet you're looking for doesn't exist.
 				</p>
 				<NavLink
-					to="/properties"
+					to="/shortlets"
 					className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl mt-8"
 				>
-					Back to Properties
+					Back to shortlets
 				</NavLink>
 			</div>
 		);
@@ -56,7 +56,7 @@ const ShortletDetails = () => {
 				</div>
 			</div>
 
-			<div className="container py-20 m-auto">
+			<div className="container py-20 px-5 m-auto">
 				{/* //////////////////////////////////////////////////////////////// */}
 				<div className="w-full p-3 flex justify-between items-center pb-20 mb-20 border-b-2 border-gray-300">
 					<div className="">
@@ -182,7 +182,7 @@ const ShortletDetails = () => {
 									<span className=" text-gray-400 font-semibold">
 										Price info :{" "}
 									</span>{" "}
-									$ 1039/sq ft
+									1039/sq ft
 								</p>
 								<p className="text-2xl text-gray-300 pr-10 md:text-2xl md:pr-16 mb-8">
 									<span className=" text-gray-400 font-semibold">
@@ -277,23 +277,23 @@ const ShortletDetails = () => {
 							<input
 								type="text"
 								placeholder="Your name"
-								className="w-full px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8"
+								className="w-full px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8 focus:ring-2 focus:ring-blue-950 focus:bg-white transition-all duration-300 "
 							/>
 							<input
 								type="text"
 								placeholder="Your email"
-								className="w-full px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8"
+								className="w-full px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8 focus:ring-2 focus:ring-blue-950 focus:bg-white transition-all duration-300"
 							/>
 							<input
 								type="text"
 								placeholder="Your Phone number"
-								className="w-full px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8"
+								className="w-full px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8 focus:ring-2 focus:ring-blue-950 focus:bg-white transition-all duration-300"
 							/>
 							<textarea
 								name="yes i'm interested"
 								placeholder="yes i'm interested"
 								id=""
-								className="w-full h-[15rem] px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8 resize-none"
+								className="w-full h-[15rem] px-5 py-6 bg-gray-100 rounded-md text-2xl mb-8 focus:ring-2 focus:ring-blue-950 focus:bg-white transition-all duration-300 resize-none"
 							></textarea>
 
 							<button className="w-full bg-blue-950 text-white text-2xl font-semibold py-7 px-5 rounded-md cursor-pointer">

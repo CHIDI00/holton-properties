@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 	const [isSticky, setIsSticky] = useState(false);
+	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -16,6 +17,10 @@ const NavBar = () => {
 		};
 	}, []);
 
+	const toggleMobileMenu = () => {
+		setMobileMenuOpen(!mobileMenuOpen);
+	};
+
 	return (
 		<div
 			className={`bg-white shadow-sm text-2xl fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -25,6 +30,39 @@ const NavBar = () => {
 			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 				<img src="/HOLTONicon-dark.png" alt="Holton Logo" className="h-20" />
 
+				{/* Mobile menu button */}
+				<button
+					type="button"
+					className="lg:hidden text-gray-700 focus:outline-none relative z-[60]"
+					onClick={toggleMobileMenu}
+					aria-label="Toggle mobile menu"
+				>
+					<svg
+						className="w-8 h-8"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						{mobileMenuOpen ? (
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						) : (
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M4 6h16M4 12h16M4 18h16"
+							/>
+						)}
+					</svg>
+				</button>
+
+				{/* Desktop navigation */}
 				<nav className="hidden lg:block">
 					<ul className="flex space-x-8 items-center text-gray-700">
 						<li>
@@ -36,185 +74,28 @@ const NavBar = () => {
 							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
 								<NavLink to="/properties">Properties</NavLink>
 							</a>
-							{/* <ul
-								className="absolute left-0 bottom-[-150px] border-t-2 border-t-[#0B0B1F] mt-2 py-2 w-56 gap-9 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
-								// data-aos="fade-up"
-							>
-								<li>
-									<a
-										href="buy-property-grid.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Buy Property Grid
-									</a>
-								</li>
-								<li>
-									<a
-										href="buy-property-list.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Buy Property List
-									</a>
-								</li>
-								<li>
-									<a
-										href="rent-property-grid.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Rent Property Grid
-									</a>
-								</li>
-								<li>
-									<a
-										href="rent-property-list.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Rent Property List
-									</a>
-								</li>
-							</ul> */}
 						</li>
 						<li className="relative group">
 							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
-								<NavLink to="/shortlets">Listing</NavLink>
+								<NavLink to="/shortlets">Shortlets</NavLink>
 							</a>
-							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-								<li>
-									<a
-										href="agent-grid.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Agent Grid
-									</a>
-								</li>
-								<li>
-									<a
-										href="agent-list.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Agent List
-									</a>
-								</li>
-								<li>
-									<a
-										href="agent-details.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Agent Details
-									</a>
-								</li>
-							</ul> */}
 						</li>
 						<li className="relative group">
 							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
-								<NavLink to="/properties">Agency</NavLink>
+								<NavLink to="/aboutus">About us</NavLink>
 							</a>
-							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-								<li>
-									<a
-										href="agency-grid.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Agency Grid
-									</a>
-								</li>
-								<li>
-									<a
-										href="agency-list.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Agency List
-									</a>
-								</li>
-								<li>
-									<a
-										href="agency-details.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Agency Details
-									</a>
-								</li>
-							</ul> */}
 						</li>
 						<li className="relative group">
 							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
-								<NavLink to="/properties">Pages</NavLink>
+								<NavLink to="/properties">Contact Us</NavLink>
 							</a>
-							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-								<li>
-									<a
-										href="about-us.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										About Us
-									</a>
-								</li>
-								<li>
-									<a
-										href="faq.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										FAQ
-									</a>
-								</li>
-								<li>
-									<a
-										href="pricing.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Pricing
-									</a>
-								</li>
-								<li>
-									<a
-										href="terms-condition.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Terms & Conditions
-									</a>
-								</li>
-								<li>
-									<a
-										href="privacy-policy.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Privacy Policy
-									</a>
-								</li>
-							</ul> */}
 						</li>
-						<li className="relative group">
+						{/* <li className="relative group">
 							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
 								<NavLink to="/properties">Blog</NavLink>
 							</a>
-							{/* <ul className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-								<li>
-									<a
-										href="blog-grid.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Blog Grid
-									</a>
-								</li>
-								<li>
-									<a
-										href="blog-list.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Blog List
-									</a>
-								</li>
-								<li>
-									<a
-										href="blog-details.html"
-										className="block px-4 py-2 text-xl hover:bg-gray-100 hover:text-[#0B0B1F]"
-									>
-										Blog Details
-									</a>
-								</li>
-							</ul> */}
-						</li>
-						<li>
+						</li> */}
+						{/* <li>
 							<a
 								href="contact-us.html"
 								className="hover:text-[#0B0B1F] font-medium"
@@ -237,7 +118,89 @@ const NavBar = () => {
 							>
 								Sign In
 							</a>
+						</li> */}
+					</ul>
+				</nav>
+			</div>
+
+			{/* Mobile navigation menu */}
+			<div
+				className={`lg:hidden bg-white fixed overflow-y-auto shadow-lg transition-all duration-300 transform  ${
+					mobileMenuOpen
+						? "translate-x-0 translate-y-0"
+						: "translate-x-full translate-y-[-100%]"
+				} ${
+					/* For tablet screens (md), menu comes from top */
+					"md:top-0 md:left-0 md:right-0 md:w-full md:h-auto md:max-h-[80vh] " +
+					/* For mobile screens (below md), menu comes from right */
+					"top-28 right-0 h-full w-3/4 "
+				}`}
+			>
+				<nav className="container   mx-auto px-4 py-4">
+					<ul className="md:grid md:grid-cols-2 space-y-4 text-gray-700">
+						<li>
+							<NavLink
+								to="/"
+								className="block hover:text-[#0B0B1F] font-medium py-2 text-4xl mb-9 text-center"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								Home
+							</NavLink>
 						</li>
+						<li>
+							<NavLink
+								to="/properties"
+								className="block hover:text-[#0B0B1F] font-medium py-2 text-4xl mb-9 text-center"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								Properties
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/shortlets"
+								className="block hover:text-[#0B0B1F] font-medium py-2 text-4xl mb-9 text-center"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								Shortlets
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/about-us"
+								className="block hover:text-[#0B0B1F] font-medium py-2 text-4xl mb-9 text-center"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								About us
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/contact-us"
+								className="block hover:text-[#0B0B1F] font-medium py-2 text-4xl mb-9 text-center"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								Contact Us
+							</NavLink>
+						</li>
+						{/* <li className="pt-4 border-t border-gray-200">
+							<a
+								href="login.html"
+								className="block text-[#0B0B1F] hover:text-[#0B0B1F] font-medium py-2"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								Sign Up
+							</a>
+						</li>
+						<li>
+							<a
+								href="register.html"
+								className="block bg-[#0B0B1F] text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors font-medium text-center mt-2"
+								onClick={() => setMobileMenuOpen(false)}
+							>
+								Sign In
+							</a>
+						</li> */}
 					</ul>
 				</nav>
 			</div>

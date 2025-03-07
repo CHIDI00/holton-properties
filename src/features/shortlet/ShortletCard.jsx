@@ -27,11 +27,11 @@ const ShortletCard = ({ limit }) => {
 							className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2"
 							data-aos="fade-up"
 						>
-							<div className="relative">
+							<div className="relative overflow-hidden">
 								<img
 									src={shortlet.image}
 									alt={shortlet.title}
-									className="w-full h-96 object-cover"
+									className="w-full h-96 object-cover transition-transform duration-500 hover:scale-110"
 								/>
 								<div className="absolute top-4 left-4 bg-blue-950 font-semibold space-x-2 text-white text-xl px-4 py-3 rounded-xl">
 									{shortlet.type}
@@ -91,7 +91,7 @@ const ShortletCard = ({ limit }) => {
 
 							<div className="px-6 pb-6">
 								<Link
-									to={`/properties/${shortletData.id}`}
+									to={`/shortlets/${shortlet.id}`}
 									className="w-full bg-blue-950 hover:bg-blue-900 text-white py-3 rounded-md transition-colors font-medium text-2xl block text-center"
 								>
 									View Details
@@ -100,12 +100,6 @@ const ShortletCard = ({ limit }) => {
 						</div>
 					))}
 				</div>
-
-				{/* <div className="text-center mt-12" data-aos="fade-down">
-					<a className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl">
-						View All Properties
-					</a>
-				</div> */}
 			</div>
 		</>
 	);
