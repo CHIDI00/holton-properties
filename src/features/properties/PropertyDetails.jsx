@@ -325,7 +325,7 @@
 import React from "react";
 import { NavLink, useParams } from "react-router-dom";
 import ImageSlider from "../../ui/ImagesSlider";
-// import { properties } from "./propertiesData";
+import { properties } from "./propertiesData";
 import { FaBath, FaBed, FaBuilding, FaCar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import {
@@ -344,17 +344,6 @@ import {
 import { useProperties } from "../../hooks/useProperties";
 
 const PropertyDetails = () => {
-	const { properties, isLoading, error } = useProperties();
-
-	if (isLoading)
-		return <div className="text-center text-2xl py-20">Loading...</div>;
-	if (error)
-		return (
-			<div className="text-center text-red-500 text-2xl py-20">
-				Error: {error}
-			</div>
-		);
-
 	// Get the propertyId from the URL parameters
 	const { propertyId } = useParams();
 
