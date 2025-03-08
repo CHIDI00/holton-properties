@@ -1,0 +1,36 @@
+[
+	{
+		"type": "header",
+		"version": "5.2.1",
+		"comment": "Export to JSON plugin for PHPMyAdmin"
+	},
+	{ "type": "database", "name": "holton" },
+	{
+		"type": "table",
+		"name": "properties",
+		"database": "holton",
+		"data": [
+			{
+				"id": "6",
+				"title": "Princewill Manor",
+				"size": "ofjfosjo",
+				"price": "[{\"amount\":\"2000\",\"description\":\"1  year\"},{\"amount\":\"5000\",\"description\":\"2 years\"},{\"amount\":\"12000\",\"description\":\"3 years\"},{\"amount\":\"1000\",\"description\":\"4 years\"}]",
+				"features": "[{\"name\":\"All Room En-suite\",\"icon\":\"BedDouble\"},{\"name\":\"Fitted Kitchen\",\"icon\":\"Utensils\"},{\"name\":\"POP Ceiling\",\"icon\":\"Home\"},{\"name\":\"Open Terrace\",\"icon\":\"Expand\"},{\"name\":\"Walk-In Closet\",\"icon\":\"Shirt\"},{\"name\":\"Walk-In Shower\",\"icon\":\"ShowerHead\"},{\"name\":\"Chandelier\",\"icon\":\"Lightbulb\"},{\"name\":\"TV Console\",\"icon\":\"Monitor\"},{\"name\":\"Ample Parking Space\",\"icon\":\"ParkingSquare\"},{\"name\":\"Stamp Concrete\",\"icon\":\"Building2\"},{\"name\":\"CCTV\",\"icon\":\"Camera\"},{\"name\":\"24\\/7 Security\",\"icon\":\"ShieldCheck\"}]",
+				"images": "[\"gallery-01.jpg\",\"gallery-02.jpg\",\"gallery-03.jpg\",\"gallery-04.jpg\",\"gallery-05.jpg\"]",
+				"location": "{\"lat\":\"0.384838\",\"long\":\"48.48838\"}",
+				"loctext": "293, Herbert Macaulay way, Yaba.",
+				"link": "mfkmdkfmk",
+				"plan": "[{\"icon\":\"http:\\/\\/127.0.0.1:8000\\/assets\\/img\\/icons\\/bed-icon.svg\",\"description\":\"3 Bedrooms\"},{\"icon\":\"http:\\/\\/127.0.0.1:8000\\/assets\\/img\\/icons\\/bath-icon.svg\",\"description\":\"4 Bathrooms\"},{\"icon\":\"http:\\/\\/127.0.0.1:8000\\/assets\\/img\\/icons\\/garage-icon.svg\",\"description\":\"2 Garages\"},{\"icon\":\"http:\\/\\/127.0.0.1:8000\\/assets\\/img\\/icons\\/building-icon.svg\",\"description\":\"35000sqft\"},{\"icon\":\"http:\\/\\/127.0.0.1:8000\\/assets\\/img\\/icons\\/calender-icon.svg\",\"description\":\"2023\"}]",
+				"slug": "princewill-manor",
+				"uniqId": "bO1aF",
+				"document": "C of O",
+				"description": "<div class=\"collapse-card\"><div id=\"about\" class=\"card-collapse collapse show\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"about-agent collapse-view\">\r\n\t\t\t\t\t\t\t\t\t\t<p> Good road frontage on a paved  county road with utilities \r\nmake it an amazing setting for your dream country getaway! If you like \r\nviews, you must see  this property!</p>\t\t\t\t\t\t\t\t\t\t   \r\n\t\t\t\t\t\t\t\t\t   <p>This property is mostly wooded and sits high on a hilltop\r\n overlooking the Mohawk River Valley. Located right in the heart of \r\nUpstate NY Amish farm Country, this land is certified organic making it\r\n extremely rare! Good road frontage on a paved  county road with \r\nutilities make it an amazing setting for your dream country getaway! If \r\nyou like views, you must see  this property!This property is mostly \r\nwooded and sits high on a hilltop overlooking the Mohawk River Valley. \r\nLocated right in the heart of Upstate NY Amish farm Country, this land \r\nis certified organic making it extremely rare! Good road frontage on a \r\npaved  county road with utilities make it an amazing setting for your \r\ndream country getaway! If you like views, you must see  this property!</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div class=\"collapse-card\">\r\n\t\t\t\t\t\t\t\t<h4 class=\"card-title\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"collapsed\" data-bs-toggle=\"collapse\" href=\"http://127.0.0.1:5500/holton/buy-detail-view.html#address\" aria-expanded=\"false\">Property Address</a>\r\n\t\t\t\t\t\t\t\t</h4>\r\n\t\t\t\t\t\t\t\t<div id=\"address\" class=\"card-collapse collapse show  collapse-view\">\r\n\t\t\t\t\t\t\t\t\t<ul class=\"property-address\"><li>Address : <span> Ferris Park</span></li><li>City : <span> Jersey City </span></li><li>State/County : <span> New Jersey State</span></li><li>Country : <span> United States</span></li><li>Zip : <span> 07305</span></li><li>Area : <span> Greenville estate</span></li></ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div><p><br></p>",
+				"sold": "0",
+				"type": "Sale",
+				"status": "1",
+				"created_at": "2025-02-22 12:09:49",
+				"updated_at": "2025-02-22 18:55:51"
+			}
+		]
+	}
+]
