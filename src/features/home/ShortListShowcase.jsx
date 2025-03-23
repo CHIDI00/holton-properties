@@ -12,7 +12,7 @@ const ShortListShowcase = () => {
 						className="text-5xl font-bold text-[#0B0B1F] mb-4"
 						data-aos="fade-up"
 					>
-						Shortlist Showcase
+						Luxurious ShortLets for Short Stays
 					</h2>
 					<div
 						className="flex items-center justify-center gap-2 mb-4"

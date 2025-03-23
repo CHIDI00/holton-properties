@@ -27,7 +27,7 @@ const NavBar = () => {
 				isSticky ? "shadow-md" : ""
 			}`}
 		>
-			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
+			<div className="container mx-auto px-4 py-6 flex justify-between items-center">
 				<img src="/HOLTONicon-dark.png" alt="Holton Logo" className="h-20" />
 
 				{/* Mobile menu button */}
@@ -66,28 +66,28 @@ const NavBar = () => {
 				<nav className="hidden lg:block">
 					<ul className="flex space-x-8 items-center text-gray-700">
 						<li>
-							<a className="hover:text-[#0B0B1F] font-medium">
+							<a className="hover:text-[#0B0B1F] text-3xl mx-10">
 								<NavLink to="/">Home</NavLink>
 							</a>
 						</li>
 						<li className="relative group">
-							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+							<a className="flex items-center hover:text-[#0B0B1F] text-3xl mx-10">
 								<NavLink to="/properties">Properties</NavLink>
 							</a>
 						</li>
 						<li className="relative group">
-							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
+							<a className="flex items-center hover:text-[#0B0B1F] text-3xl mx-10">
 								<NavLink to="/shortlets">Shortlets</NavLink>
 							</a>
 						</li>
 						<li className="relative group">
-							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
-								<NavLink to="/aboutus">About us</NavLink>
+							<a className="flex items-center hover:text-[#0B0B1F] text-3xl mx-10">
+								<NavLink to="/about-us">About us</NavLink>
 							</a>
 						</li>
 						<li className="relative group">
-							<a className="flex items-center hover:text-[#0B0B1F] font-medium">
-								<NavLink to="/properties">Contact Us</NavLink>
+							<a className="flex items-center hover:text-[#0B0B1F] text-3xl mx-10">
+								<NavLink to="/contact-us">Contact Us</NavLink>
 							</a>
 						</li>
 						{/* <li className="relative group">

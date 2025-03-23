@@ -10,7 +10,7 @@ const PropertyShowcase = () => {
 						className="text-5xl font-bold text-[#0B0B1F] mb-4"
 						data-aos="fade-up"
 					>
-						Featured Properties for sale
+						Best Luxury Properties for Sale in Lagos
 					</h2>
 					<div
 						className="flex items-center justify-center gap-2 mb-4"
@@ -33,7 +33,7 @@ const PropertyShowcase = () => {
 						href="buy-property-grid.html"
 						className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl"
 					>
-						<NavLink to="/properties">View All Shortlets</NavLink>
+						<NavLink to="/properties">View All Properties</NavLink>
 					</a>
 				</div>
 			</div>

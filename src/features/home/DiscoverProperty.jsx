@@ -19,7 +19,7 @@ const DiscoverProperty = () => {
 					</p>
 				</div>
 
-				<div className="w-full min-h-[500px] border-2 flex flex-col justify-center items-center md:flex-row gap-6">
+				<div className="w-full min-h-[500px] flex flex-col justify-center items-center md:flex-row gap-6">
 					{/* Left container */}
 					<div
 						className="w-full h-[300px] md:h-[500px] bg-[url('/gallery/gallery-14.jpg')] bg-cover bg-center bg-no-repeat rounded-md"

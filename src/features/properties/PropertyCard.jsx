@@ -121,21 +121,21 @@ const PropertyCard = ({ limit }) => {
 								alt={property.title}
 								className="w-full h-96 object-cover transition-transform duration-500 hover:scale-110"
 							/>
-							<div className="absolute top-4 left-4 bg-blue-950 text-white text-xl px-4 py-3 rounded-xl">
+							<div className="absolute top-4 left-4 bg-blue-95Now back0 text-white px-4 py-3 rounded-xl">
 								{property.type}
 							</div>
-							<div className="absolute bottom-4 right-4 text-white px-4 py-2 rounded-md font-bold text-4xl">
+							<div className="absolute bottom-4 right-4 text-white px-4 py-2 rounded-md font-bold text-2xl md:text-4xl">
 								{property.price}
 							</div>
 						</div>
 
 						<div className="p-6">
-							<h3 className="text-3xl  font-bold text-[#0B0B1F] mb-3">
+							<h3 className="text-3xl md:text-xl  font-bold text-[#0B0B1F] mb-3">
 								{property.title}
 							</h3>
-							<p className="text-gray-600 text-2xl mb-4 flex items-center">
+							<p className="text-gray-600 text-xl mb-4 flex items-center">
 								<svg
-									className="w-8 h-8 mr-2 text-blue-950"
+									className="w-6 h-6 mr-2 text-blue-950"
 									fill="currentColor"
 									viewBox="0 0 20 20"
 								>
@@ -164,13 +164,14 @@ const PropertyCard = ({ limit }) => {
 							</div>
 						</div>
 
-						<div className="px-6 pb-6">
-							<Link
-								to={`/properties/${property.id}`}
-								className="w-full bg-blue-950 hover:bg-blue-900 text-white py-3 rounded-md transition-colors font-medium text-2xl block text-center"
-							>
-								View Details
-							</Link>
+						<div className="w-full flex justify-between items-center gap-5 px-7 pb-5">
+							<div className="px-6 pb-6 w-full bg-blue-950 hover:bg-blue-900 text-white py-5 rounded-xl transition-colors font-medium text-2xl block text-center">
+								<Link to={`/properties/${property.id}`}>View Details</Link>
+							</div>
+
+							<div className="px-6 pb-6 w-full bg-blue-700 hover:bg-blue-800 text-white py-5 rounded-xl transition-colors font-medium text-2xl block text-center">
+								<a href="facebook.com">Book now</a>
+							</div>
 						</div>
 					</div>
 				))}

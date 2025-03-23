@@ -341,7 +341,6 @@ import {
 	Waves,
 	Wine,
 } from "lucide-react";
-import { useProperties } from "../../hooks/useProperties";
 
 const PropertyDetails = () => {
 	// Get the propertyId from the URL parameters
@@ -398,7 +397,7 @@ const PropertyDetails = () => {
 						</p>
 					</div>
 					<div className="text-3xl font-semibold">
-						<p>N{property.price}</p>
+						<p>{property.price}</p>
 					</div>
 				</div>
 				{/* //////////////////////////////////////////////////////////////// border-2 border-red-600*/}
@@ -597,7 +596,12 @@ const PropertyDetails = () => {
 						</div>
 					</div>
 
-					<div className="w-full md:w-[35%]">
+					<div className="w-full md:w-[35%] px-7">
+						<div className="w-full">
+							<button className="bg-blue-600 w-full h-24 rounded-lg mb-6  text-white text-3xl">
+								Book Property
+							</button>
+						</div>
 						<form className="w-full p-9 bg-white rounded-md">
 							<input
 								type="text"

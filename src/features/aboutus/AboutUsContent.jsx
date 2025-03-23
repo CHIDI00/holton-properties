@@ -41,21 +41,21 @@ const AboutUsContent = () => {
 						<img
 							src="/about-us/about-us-01.jpg "
 							alt=""
-							className="w-full h-full rounded-3xl object-cover"
+							className="w-full h-full rounded-3xl object-cover "
 						/>
 					</div>
 					<div className="w-full h-1/3 md:h-full ">
 						<img
 							src="/about-us/about-us-02.jpg "
 							alt=""
-							className="w-full h-full rounded-3xl object-cover"
+							className="w-full h-full rounded-3xl object-cover "
 						/>
 					</div>
 					<div className="w-full h-1/3 md:h-full ">
 						<img
 							src="/about-us/about-us-03.jpg "
 							alt=""
-							className="w-full h-full rounded-3xl object-cover"
+							className="w-full h-full rounded-3xl object-cover "
 						/>
 					</div>
 				</div>

@@ -28,24 +28,24 @@ const HomeContent = () => {
 					backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
 				}}
 			>
-				<div className="absolute inset-0 bg-black bg-opacity-50"></div>
-				<div className="relative z-10 w-full h-full container flex flex-col gap-7 items-center justify-center mx-auto px-10 py-24  border-2 border-red-600">
+				<div className="absolute inset-0 bg-black bg-opacity-10"></div>
+				<div className="relative z-10 w-full h-full container flex flex-col gap-7 items-center justify-center mx-auto px-10 py-24 ">
 					<div className="flex flex-wrap -mx-4">
 						<div
 							className="flex flex-col w-full text-left  justify-center align-sub- mb-12"
 							data-aos="fade-down"
 						>
-							<h1 className="text-6xl  lg:text-[6rem] font-bold text-white mb-4">
+							<h1 className="text-6xl  lg:text-[10rem] text-center font-bold text-white mb-4">
 								Connecting you{" "}
-								<span className="text-gray-400">to the home</span> you love
+								<span className="text-gray-700">to the home</span> you love
 							</h1>
-							<p className="text-gray-200 text-[2rem]">
+							<p className="text-gray-200 text-center text-[2rem]">
 								Properties for buy / rent in in your location. We have more than
 								3000+ listings for you to choose
 							</p>
 						</div>
 					</div>
-					<div className="flex flex-wrap">
+					{/* <div className="flex flex-wrap">
 						<div className="w-full px-4 py-8">
 							<div
 								className="bg-white rounded-lg shadow-lg p-10"
@@ -209,7 +209,7 @@ const HomeContent = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</section>
 		</>
