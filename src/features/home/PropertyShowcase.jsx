@@ -26,7 +26,7 @@ const PropertyShowcase = () => {
 					</p>
 				</div>
 
-				<PropertyCard limit={13} />
+				<PropertyCard limit={6} />
 
 				<div className="text-center mt-12" data-aos="fade-down">
 					<a

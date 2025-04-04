@@ -100,10 +100,11 @@ import { Link } from "react-router-dom";
 import { useProperties } from "../../hooks/useProperties";
 import { properties } from "./propertiesData";
 
-const PropertyCard = ({ limit }) => {
-	// if (isLoading) return <div className="">Loading</div>;
-	// Apply the limit if provided
-	const displayData = limit ? properties.slice(7, limit) : properties;
+const PropertyCard = ({ limit, currentPage = 1 }) => {
+	// Calculate the correct slice of properties based on pagination
+	const startIndex = (currentPage - 1) * limit;
+	const endIndex = startIndex + limit;
+	const displayData = properties.slice(startIndex, endIndex);
 
 	return (
 		// Dummy data
@@ -118,10 +119,11 @@ const PropertyCard = ({ limit }) => {
 						<div className="relative overflow-hidden">
 							<img
 								src={property.image}
-								alt={property.title}
+								alt={property.alt}
 								className="w-full h-96 object-cover transition-transform duration-500 hover:scale-110"
+								loading="lazy"
 							/>
-							<div className="absolute top-4 left-4 bg-blue-95Now back0 text-white px-4 py-3 rounded-xl">
+							<div className="absolute top-4 left-4 bg-blue-950 font-semibold space-x-2 text-white text-xl px-4 py-3 rounded-xl">
 								{property.type}
 							</div>
 							<div className="absolute bottom-4 right-4 text-white px-4 py-2 rounded-md font-bold text-2xl md:text-4xl">
@@ -148,7 +150,7 @@ const PropertyCard = ({ limit }) => {
 								{property.location}
 							</p>
 
-							<div className="flex justify-between bg-gray-100 text-gray-500 px-8 py-6 rounded-md text-2xl mt-8 mb-6">
+							<div className="flex justify-between bg-gray-100 text-gray-500 px-8 py-6 rounded-md text-xl mt-8 mb-6">
 								<div className="flex items-center ">
 									<FaBed className="text-blue-950 mr-2" />
 									<span>{property.beds} Beds</span>

@@ -58,6 +58,7 @@ const Cities = () => {
 								src={city.locationImage}
 								alt="city"
 								className="w-full h-full object-cover md:rounded-s-xl rounded-t-xl"
+								loading="lazy"
 							/>
 						</div>
 						<div className="w-full md:w-[50%] py-5 h-full flex flex-col justify-center items-start px-10">

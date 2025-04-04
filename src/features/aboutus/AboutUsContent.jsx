@@ -40,22 +40,25 @@ const AboutUsContent = () => {
 					<div className="w-full h-1/3 md:h-full ">
 						<img
 							src="/about-us/about-us-01.jpg "
-							alt=""
+							alt="Luxury home"
 							className="w-full h-full rounded-3xl object-cover "
+							loading="lazy"
 						/>
 					</div>
 					<div className="w-full h-1/3 md:h-full ">
 						<img
 							src="/about-us/about-us-02.jpg "
-							alt=""
+							alt="White painted luxury property"
 							className="w-full h-full rounded-3xl object-cover "
+							loading="lazy"
 						/>
 					</div>
 					<div className="w-full h-1/3 md:h-full ">
 						<img
 							src="/about-us/about-us-03.jpg "
-							alt=""
+							alt="luxury"
 							className="w-full h-full rounded-3xl object-cover "
+							loading="lazy"
 						/>
 					</div>
 				</div>
@@ -68,7 +71,12 @@ const AboutUsContent = () => {
 							Ready to book your home?
 						</h1>
 						<div className="w-full md:w-[80%] border-[10px] border-white">
-							<img src="/about-us/about-us-04.jpg " alt="" className="w-full" />
+							<img
+								src="/about-us/about-us-04.jpg "
+								alt="Luxury shortlet"
+								className="w-full"
+								loading="lazy"
+							/>
 						</div>
 					</div>
 

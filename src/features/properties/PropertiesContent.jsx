@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import PropertyCard from "./PropertyCard";
 import { Menu } from "lucide-react";
 import { HiXMark } from "react-icons/hi2";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { properties } from "./propertiesData";
 
 const PropertiesContent = () => {
 	const [showOptions, setShowOptions] = useState(false);
@@ -16,6 +17,13 @@ const PropertiesContent = () => {
 	const [showStatusOptions, setShowStatusOptions] = useState(false);
 	const [showPropertyTypeOptions, setShowPropertyTypeOptions] = useState(false);
 	const [showBedsOptions, setShowBedsOptions] = useState(false);
+
+	// Pagination state
+	const [currentPage, setCurrentPage] = useState(1);
+	const [itemsPerPage] = useState(9);
+
+	// Calculate total pages
+	const totalPages = Math.ceil(properties.length / itemsPerPage);
 
 	function handleOption() {
 		setShowOptions(!showOptions);
@@ -49,6 +57,22 @@ const PropertiesContent = () => {
 		setShowMobileSearch(!showMobileSearch);
 	}
 
+	// Pagination functions
+	function goToNextPage() {
+		setCurrentPage((page) => Math.min(page + 1, totalPages));
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
+
+	function goToPreviousPage() {
+		setCurrentPage((page) => Math.max(page - 1, 1));
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
+
+	function goToPage(pageNumber) {
+		setCurrentPage(pageNumber);
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
+
 	return (
 		<>
 			<div className="w-full bg-blue-950 py-20 md:py-32 flex flex-col justify-center items-center mt-28 text-white">
@@ -62,7 +86,7 @@ const PropertiesContent = () => {
 			</div>
 
 			<div className="w-full flex justify-start items-start px-6 gap-20">
-				<div className="hidden md:block w-[45%] my-20  p-10 bg-white shadow-lg rounded-md">
+				<div className="hidden md:block w-[30%] my-20  p-10 bg-white shadow-lg rounded-md">
 					<p className="text-2xl font-semibold mb-6">Advanced Search</p>
 
 					<form action="" className="w-full space-y-6">
@@ -214,7 +238,71 @@ const PropertiesContent = () => {
 					</form>
 				</div>
 
-				<PropertyCard />
+				<div className="w-full md:w-[70%]">
+					<PropertyCard limit={itemsPerPage} currentPage={currentPage} />
+
+					{/* Pagination Controls */}
+					<div className="flex justify-center items-center mt-8 mb-16 gap-2">
+						<button
+							className={`flex items-center justify-center w-10 h-10 rounded-md ${
+								currentPage === 1
+									? "bg-gray-200 text-gray-500 cursor-not-allowed"
+									: "bg-blue-950 text-white hover:bg-blue-800"
+							}`}
+							onClick={goToPreviousPage}
+							disabled={currentPage === 1}
+						>
+							<FaChevronLeft />
+						</button>
+
+						{/* Page Numbers */}
+						{[...Array(totalPages)].map((_, index) => {
+							const pageNumber = index + 1;
+							// Show limited page numbers with ellipsis for better UX
+							if (
+								pageNumber === 1 ||
+								pageNumber === totalPages ||
+								(pageNumber >= currentPage - 1 && pageNumber <= currentPage + 1)
+							) {
+								return (
+									<button
+										key={pageNumber}
+										className={`w-10 h-10 rounded-md ${
+											currentPage === pageNumber
+												? "bg-red-500 text-white"
+												: "bg-gray-200 hover:bg-gray-300"
+										}`}
+										onClick={() => goToPage(pageNumber)}
+									>
+										{pageNumber}
+									</button>
+								);
+							} else if (
+								(pageNumber === currentPage - 2 && currentPage > 3) ||
+								(pageNumber === currentPage + 2 && currentPage < totalPages - 2)
+							) {
+								return (
+									<span key={pageNumber} className="px-1">
+										...
+									</span>
+								);
+							}
+							return null;
+						})}
+
+						<button
+							className={`flex items-center justify-center w-10 h-10 rounded-md ${
+								currentPage === totalPages
+									? "bg-gray-200 text-gray-500 cursor-not-allowed"
+									: "bg-blue-950 text-white hover:bg-blue-800"
+							}`}
+							onClick={goToNextPage}
+							disabled={currentPage === totalPages}
+						>
+							<FaChevronRight />
+						</button>
+					</div>
+				</div>
 			</div>
 
 			{/* Button to open search menu */}

@@ -26,7 +26,7 @@ const ShortListShowcase = () => {
 				</div>
 
 				{/* Pass the limit prop to show only 6 cards */}
-				<ShortletCard limit={13} />
+				<ShortletCard limit={6} />
 
 				<div className="text-center mt-12" data-aos="fade-down">
 					<a className="inline-block bg-blue-950 hover:bg-blue-900 text-white px-8 py-3 rounded-md transition-colors font-medium text-xl">

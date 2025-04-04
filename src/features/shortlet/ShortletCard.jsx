@@ -4,7 +4,7 @@ import { HiHeart } from "react-icons/hi";
 import { shortletData } from "../shortlet/shortletData";
 import { Link } from "react-router-dom";
 
-const ShortletCard = ({ limit }) => {
+const ShortletCard = ({ limit, currentPage = 1 }) => {
 	const [favorites, setFavorites] = useState({});
 
 	const toggleFavorite = (id) => {
@@ -14,8 +14,12 @@ const ShortletCard = ({ limit }) => {
 		}));
 	};
 
-	// Apply the limit if provided
-	const displayData = limit ? shortletData.slice(7, limit) : shortletData;
+	// Calculate the correct slice of shortlets based on pagination
+	const startIndex = (currentPage - 1) * limit;
+	const endIndex = startIndex + limit;
+	const displayData = limit
+		? shortletData.slice(startIndex, endIndex)
+		: shortletData;
 
 	return (
 		<>
@@ -30,8 +34,9 @@ const ShortletCard = ({ limit }) => {
 							<div className="relative overflow-hidden">
 								<img
 									src={shortlet.image}
-									alt={shortlet.title}
+									alt={shortlet.alt}
 									className="w-full h-96 object-cover transition-transform duration-500 hover:scale-110"
+									loading="lazy"
 								/>
 								<div className="absolute top-4 left-4 bg-blue-950 font-semibold space-x-2 text-white text-xl px-4 py-3 rounded-xl">
 									{shortlet.type}
