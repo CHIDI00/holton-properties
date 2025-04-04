@@ -98,13 +98,16 @@
 import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useProperties } from "../../hooks/useProperties";
-import { properties } from "./propertiesData";
+import { properties as allProperties } from "./propertiesData";
 
-const PropertyCard = ({ limit, currentPage = 1 }) => {
+const PropertyCard = ({ limit, currentPage = 1, filteredProperties }) => {
+	// Use filtered properties if provided, otherwise use all properties
+	const propertiesToUse = filteredProperties || allProperties;
+
 	// Calculate the correct slice of properties based on pagination
 	const startIndex = (currentPage - 1) * limit;
 	const endIndex = startIndex + limit;
-	const displayData = properties.slice(startIndex, endIndex);
+	const displayData = propertiesToUse.slice(startIndex, endIndex);
 
 	return (
 		// Dummy data

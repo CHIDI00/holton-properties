@@ -13,6 +13,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutUs from "./pages/AboutUs";
 
+// Import the LocationProvider
+import { LocationProvider } from "./context/LocationContext";
+
 function App() {
 	useEffect(() => {
 		AOS.init({
@@ -22,19 +25,27 @@ function App() {
 	}, []);
 
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route element={<AppLayout />}>
-					<Route path="/" element={<Home />} />
-					<Route path="/properties" element={<Properties />} />
-					<Route path="/properties/:propertyId" element={<PropertyDetails />} />
-					<Route path="/shortlets" element={<Shortlets />} />
-					<Route path="/shortlets/:shortletId" element={<ShortletDetails />} />
-					<Route path="/about-us" element={<AboutUs />} />
-					<Route path="/contact-us" element={<ContactUs />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
+		<LocationProvider>
+			<BrowserRouter>
+				<Routes>
+					<Route element={<AppLayout />}>
+						<Route path="/" element={<Home />} />
+						<Route path="/properties" element={<Properties />} />
+						<Route
+							path="/properties/:propertyId"
+							element={<PropertyDetails />}
+						/>
+						<Route path="/shortlets" element={<Shortlets />} />
+						<Route
+							path="/shortlets/:shortletId"
+							element={<ShortletDetails />}
+						/>
+						<Route path="/about-us" element={<AboutUs />} />
+						<Route path="/contact-us" element={<ContactUs />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
+		</LocationProvider>
 	);
 }
 

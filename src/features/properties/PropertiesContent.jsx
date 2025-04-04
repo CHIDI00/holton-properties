@@ -3,13 +3,23 @@ import { NavLink } from "react-router-dom";
 import PropertyCard from "./PropertyCard";
 import { Menu } from "lucide-react";
 import { HiXMark } from "react-icons/hi2";
-import { FaChevronDown, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {
+	FaChevronDown,
+	FaChevronLeft,
+	FaChevronRight,
+	FaTimes,
+} from "react-icons/fa";
 import { properties } from "./propertiesData";
+import { useLocation } from "../../context/LocationContext";
 
 const PropertiesContent = () => {
+	// Get the selected city from the LocationContext
+	const { selectedCity, clearCityFilter } = useLocation();
 	const [showOptions, setShowOptions] = useState(false);
 	const [showMobileSearch, setShowMobileSearch] = useState(false);
-	const [selectedLocation, setSelectedLocation] = useState("Abuja");
+	const [selectedLocation, setSelectedLocation] = useState(
+		selectedCity || "Abuja"
+	);
 	const [selectedStatus, setSelectedStatus] = useState("");
 	const [selectedPropertyType, setSelectedPropertyType] = useState("");
 	const [selectedBeds, setSelectedBeds] = useState("");
@@ -22,8 +32,20 @@ const PropertiesContent = () => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const [itemsPerPage] = useState(9);
 
-	// Calculate total pages
-	const totalPages = Math.ceil(properties.length / itemsPerPage);
+	// Filter properties based on selected city
+	const filteredProperties = selectedCity
+		? properties.filter((property) => property.location.includes(selectedCity))
+		: properties;
+
+	// Calculate total pages based on filtered properties
+	const totalPages = Math.ceil(filteredProperties.length / itemsPerPage);
+
+	// Update selectedLocation when selectedCity changes
+	useEffect(() => {
+		if (selectedCity) {
+			setSelectedLocation(selectedCity);
+		}
+	}, [selectedCity]);
 
 	function handleOption() {
 		setShowOptions(!showOptions);
@@ -83,6 +105,18 @@ const PropertiesContent = () => {
 					</a>
 					/ Select your preferred properties and go for it
 				</p>
+				{selectedCity && (
+					<div className="mt-4 bg-white text-blue-950 px-4 py-2 rounded-full flex items-center">
+						<span className="mr-2">Showing properties in {selectedCity}</span>
+						<button
+							className="bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition-colors"
+							onClick={clearCityFilter}
+							title="Clear filter"
+						>
+							<FaTimes size={14} />
+						</button>
+					</div>
+				)}
 			</div>
 
 			<div className="w-full flex justify-start items-start px-6 gap-20">
@@ -239,7 +273,11 @@ const PropertiesContent = () => {
 				</div>
 
 				<div className="w-full md:w-[70%]">
-					<PropertyCard limit={itemsPerPage} currentPage={currentPage} />
+					<PropertyCard
+						limit={itemsPerPage}
+						currentPage={currentPage}
+						filteredProperties={filteredProperties}
+					/>
 
 					{/* Pagination Controls */}
 					<div className="flex justify-center items-center mt-8 mb-16 gap-2">
